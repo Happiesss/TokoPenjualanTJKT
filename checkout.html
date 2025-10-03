@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo toko.png" width="200">
+    <p><h2>Form Checkout</h2></p></header>
+  <section class="cart">
+    <form id="checkout-form">
+      <label>Nama Lengkap:<br><input type="text" required></label><br><br>
+      <label>Alamat Pengiriman:<br><textarea required></textarea></label><br><br>
+      <label>Metode Pembayaran:<br>
+        <select required>
+          <option>Transfer Bank</option>
+          <option>COD</option>
+          <option>e-Wallet</option>
+        </select>
+      </label><br><br>
+      <button type="submit" class="btn">Kirim Pesanan</button>
+    </form>
+  </section>
+  <script>
+    document.getElementById("checkout-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Pesanan berhasil dikirim!");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
