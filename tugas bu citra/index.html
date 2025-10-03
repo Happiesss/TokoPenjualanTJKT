@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toko Online TJKT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo toko.png" width="300" alt="Router" />
+    <p>Jual Perlengkapan Jaringan Berkualitas!</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="product-list">
+    <div class="product">
+      <img src="router.png" alt="Router" />
+      <h3>Router Mikrotik RB750</h3>
+      <p>Harga: Rp 600.000</p>
+      <button onclick="addToCart('Router Mikrotik', 600000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="lan.jpg" alt="Kabel LAN" />
+      <h3>Kabel LAN CAT6 30m</h3>
+      <p>Harga: Rp 120.000</p>
+      <button onclick="addToCart('Kabel LAN CAT6', 120000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="switch.jpg" alt="Switch" />
+      <h3>Switch 8 Port TP-Link</h3>
+      <p>Harga: Rp 500.000</p>
+      <button onclick="addToCart('Switch TP-Link', 500000)">Tambah ke Keranjang</button>
+    </div>
+     <div class="product">
+      <img src="adapter.jpg" alt="Adapter LAN" />
+      <h3>Adapter LAN</h3>
+      <p>Harga: Rp 80.000</p>
+      <button onclick="addToCart('Adapter', 80000)">Tambah ke Keranjang</button>
+    </div>
+     <div class="product">
+      <img src="opm.jpg" alt="OPM" />
+      <h3>OPM</h3>
+      <p>Harga: Rp 150.000</p>
+      <button onclick="addToCart('OPM', 150000)">Tambah ke Keranjang</button>
+    </div>
+     <div class="product">
+      <img src="fo.jpg" alt="Kabel Fiber Optic" />
+      <h3>Kabel Fiber Optic</h3>
+      <p>Harga: Rp 20.000</p>
+      <button onclick="addToCart('Kabel Fiber Optic', 20000)">Tambah ke Keranjang</button>
+    </div>
+     <div class="product">
+      <img src="tester.jpg" alt="Alat Tester LAN" />
+      <h3>Alat Tester LAN</h3>
+      <p>Harga: Rp 30.000</p>
+      <button onclick="addToCart('Alat Tester LAN', 30000)">Tambah ke Keranjang</button>
+    </div>
+     <div class="product">
+      <img src="tang kabel.jpg" alt="Tang Kabel" />
+      <h3>Tang Kabel</h3>
+      <p>Harga: Rp 150.000</p>
+      <button onclick="addToCart('Tang Kabel', 150000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="odp.jpg" alt="ODP" />
+      <h3>ODP</h3>
+      <p>Harga: Rp 70.000</p>
+      <button onclick="addToCart('ODP', 70000)">Tambah ke Keranjang</button>
+    </div>
+    <div class="product">
+      <img src="earth tester.jpg" alt="Earth Tester" />
+      <h3>Earth Tester</h3>
+      <p>Harga: Rp 5.000.000</p>
+      <button onclick="addToCart('Earth Tester', 5000000)">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: Rp 0</p>
+    <a href="checkout.html" class="btn">Checkout</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Web Penjualan TJKT</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
